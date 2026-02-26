@@ -102,11 +102,14 @@ export interface PortfolioConfig {
         googleAnalyticsId: string;
     };
     language: "en" | "vi" | "ja" | "ko" | "zh" | "fr" | "de" | "es" | "pt" | "ru";
+    sectionOrder: SectionKey[];
     customDomain: string;
     isPublished: boolean;
     createdAt: string;
     updatedAt: string;
 }
+
+export type SectionKey = keyof PortfolioConfig["sections"];
 
 export interface LanguageStat {
     name: string;
