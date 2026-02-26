@@ -77,6 +77,7 @@ function getDefaultConfig(username: string): PortfolioConfig {
             googleAnalyticsId: "",
         },
         language: "en",
+        sectionOrder: ["hero", "about", "skills", "projects", "experience", "contact", "blog", "stats"],
         customDomain: "",
         isPublished: false,
         createdAt: new Date().toISOString(),
